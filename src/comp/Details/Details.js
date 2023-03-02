@@ -7,7 +7,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 export default function Details() {
     const [backendData,setBackendData]=useState([{}])
   useEffect(()=>{
-    fetch("/bookings").then(
+    fetch("https://hotelmanagement-api.vercel.app/bookings").then(
       response=>response.json()
     ).then(
       data=>{

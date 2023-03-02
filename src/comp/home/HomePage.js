@@ -7,7 +7,7 @@ import NavBar from '../navbar/NavBar';
 const HomePage = () => {
     const [backendData, setBackendData] = useState([{}])
     useEffect(()=>{
-        fetch("/rooms").then(
+        fetch("https://hotelmanagement-api.vercel.app/rooms").then(
           response=>response.json()
         ).then(
           data=>{
